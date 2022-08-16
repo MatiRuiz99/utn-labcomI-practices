@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+</head>
+<body>
+    
+</body>
+</html>
+<head>
+    <style>
+        table,
+        td,
+        th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+        table {
+        width: 100%;
+        }
+    </style>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Pais</th>
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matias</td>
+                <td>Ruiz</td>
+                <td>22</td>
+                <td>Argentina</td>
+            </tr>
+            <tr>
+                <td>Lara</td>
+                <td>Fernandez</td>
+                <td>21</td>
+                <td>Chile</td>
+            </tr>
+            <tr>
+                <td>Tobias</td>
+                <td>Maidana</td>
+                <td>24</td>
+                <td>Uruguay</td>
+            </tr>
+        </tbody>
+    </table>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th colspan="2">Pais / ciudad</th>
+                <th>Red Social</th>
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matias</td>
+                <td>Ruiz</td>
+                <td>22</td>
+                <td rowspan="2" colspan="2">Argentina</td>
+                
+                <td><a href="twitter.com">Twitter</a></td>
+            </tr>
+            <tr>
+                <td>Lara</td>
+                <td>Fernandez</td>
+                <td>21</td>
+                
+                <td><a href="twitter.com">Twitter</a></td>
+            </tr>
+            <tr>
+                <td>Tobias</td>
+                <td>Maidana</td>
+                <td>24</td>
+                <td colspan="2">Uruguay</td>
+                
+                <td><a href="twitter.com">Twitter</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

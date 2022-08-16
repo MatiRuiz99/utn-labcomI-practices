@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Completar perfil</title>
+    </head>
+    
+     
+    <body>
+        <h1>Perfil</h1>
+        <p>Ingrese sus datos</p>
+        <form action="/action_page.php" autocomplete="on">
+            <fieldset>
+                <legend>Información personal</legend>
+                
+                <label for="perfil">Perfil</label>
+                <input type="text" id="perfil" name="perfil" value="Estudiante" disabled /><br><br>
+                
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese Nombre completo" /><br><br>
+                
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Ingrese e-mail" /><br><br>
+    
+                <label for="age">Edad</label>
+                <input type="number" id="age" name="age" placeholder="Ingrese edad" /><br><br>
+    
+                <label for="nacionalidad">Nacionalidad</label>
+                <select name="nacionalidad" id="nacionalidad">
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                    <option value="peru">Peru</option>
+                </select><br><br>
+    
+                <label for="condicion">Condición Laboral</label>
+                <select name="condicion" id="condicion">
+                    <option value="desempleado">Desempleado</option>
+                    <option value="busqueda laboral">En búsqueda laboral</option>
+                    <option value="part-time">Trabajo part-time</option>
+                    <option value="full-time">Trabajo full-time</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Gustos personales</legend>
+                <label for="gustosm">Gustos musicales</label>
+                <input type="text" id="gustosm" name="gustosm" placeholder="Ingrese sus gustos personales" /><br><br>
+    
+                <select name="comidap" id="comidap">
+                    <option value="Fideos con salsa">Desempleado</option>
+                    <option value="Pizza">En búsqueda laboral</option>
+                    <option value="Arroz blanco">Trabajo part-time</option>
+                    <option value="Guiso de lentejas">Trabajo full-time</option>
+                </select>
+                
+
+            </fieldset>
+                <br><br>
+                <input type="submit" value="Enviar"/><br><br>
+                <label for="rememberme">Recordar</label>
+                <input type="checkbox" name="rememberme" id="rememberme"/> 
+        </form>
+
+    </body>
+</html>
