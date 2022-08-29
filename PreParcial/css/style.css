@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(222, 222, 222);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    height: 40px;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+ul {
+    margin: 0%;
+    list-style-type: none;
+}
+
+li {
+    
+    display: inline-flex;
+    margin-right: 20px;
+}
+a {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: 2px solid grey;
+}
+
+a.active {
+    border-bottom: 4px solid black;
+}
+
+
+header .profile svg {
+    width: 30px;
+}
+
+section {
+    display: flex;
+    min-height: 300px;
+}
+
+ div {
+    flex: 1;
+}
+
+.img-background {
+    background: url('https://www.utn.edu.ar/images/2018/09/27/3foferta.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-background h1 {
+    color: white;
+    align-items: center;
+    
+}
+
+.img-content p {
+    font-size: 18px;
+    padding: 45px;
+}
+
