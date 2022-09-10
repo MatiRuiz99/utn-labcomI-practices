@@ -11,8 +11,7 @@
     --color-theme: #00594c;
     --color-active: #5df2d6;
     --color-back-active: #04957d;
-    --color-gradient: linear-gradient(to right, var(--color-theme),
-            var(--color-back-active));
+    --color-gradient: linear-gradient(to right, var(--color-theme), var(--color-back-active));
 }
 
 body {
@@ -26,8 +25,7 @@ ul {
     margin: 0;
 }
 
-button,
-a {
+button,a {
     user-select: none;
     -webkit-user-select: none;
 }
