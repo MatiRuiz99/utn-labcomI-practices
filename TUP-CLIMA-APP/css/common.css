@@ -25,7 +25,8 @@ ul {
     margin: 0;
 }
 
-button,a {
+button,
+a {
     user-select: none;
     -webkit-user-select: none;
 }
