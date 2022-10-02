@@ -31,11 +31,21 @@ a {
     -webkit-user-select: none;
 }
 
+body button {
+    border-radius: 10px;
+    margin: 6px;
+    padding: 6px;
+    color: white;
+    background-color: var(--color-theme);
+}
+
 header {
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--color-theme);
+    background: var(--color-gradient);
 }
 
 nav>ul {
@@ -60,13 +70,15 @@ nav li a {
 }
 
 nav li.current-page a {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     color: var(--color-theme);
     background-color: var(--color-active);
     pointer-events: none;
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 80px;
     overflow: auto;
     padding: 16px;
     padding-bottom: 60px;
@@ -77,6 +89,7 @@ h1 {
     text-align: center;
     margin: 0;
     color: white;
+    
 }
 
 h1>img {
@@ -103,7 +116,7 @@ main section {
 footer {
     position: fixed;
     bottom: 0px;
-    background: var(--color-theme);
+    background: var(--color-gradient);
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -116,7 +129,8 @@ footer p {
 }
 
 main p {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    font-size: small;
 }
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */

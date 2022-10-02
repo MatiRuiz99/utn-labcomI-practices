@@ -7,6 +7,7 @@
     <title>TUP LC2 - TP Integrador</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
+    “<link rel="stylesheet" href="css/pages/add-city.css">
 </head>
 
 <body>
@@ -30,11 +31,21 @@
             <!-- Sección donde se debe colocar el formulario, con el select y el
 botón de consultar -->
                 <form>
-                    <label for="text">Ingrese la ciudad a agregar:</label>
-                    <input type="text" name="agregociudad" id="agregociudad">
-                    <button type="button">Agregar</button>
+                    <label for="text">Ingrese la ciudad a agregar:</label><br>
+                    <input type="text" name="agregociudad" id="agregociudad"><br>
+                    <button type="button">Agregar</button><br>
                 </form>
         </section>
+        <div id="Success">
+            <p>Ciudad agregada con éxito</p>
+        </div>
+        <div id="Warning">
+            <p>La ciudad ingresada ya se encuentra almacendada</p>
+        </div>
+        <div id="Error">
+            <p>Error: La ciudad almacenada no se encuentra almacenada en la API o se <br> produjo un error al consultar</p>
+        </div>
+        
     </main>
     <footer>
         <p>
