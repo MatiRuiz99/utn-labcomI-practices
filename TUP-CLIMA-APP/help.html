@@ -38,16 +38,19 @@
         <section>
             <form action="/action_page.php">
                 
-                <label for="text">Nombre</label>
+                <label for="text">Nombre:</label><br>
                 <input type="text" name="nombre" id="Nombre"><br>
-                <label for="email">Email</label>
+                <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email"><br>
-                <label for="textarea">Mensaje</label>
+                <label for="textarea">Mensaje:</label><br>
                 <textarea cols="30" rows="8" name="mensaje" id="mensaje"></textarea><br>
                 <button type="reset">Limpiar</button>
                 <button type="submit">Enviar</button>
             </form>
         </section> 
+        <div id="error">
+            <p>Ingrese un Email válido</p>
+        </div>
     </main>
     <footer>
         <p>
