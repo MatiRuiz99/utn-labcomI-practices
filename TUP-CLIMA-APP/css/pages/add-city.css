@@ -14,14 +14,14 @@ div {
     padding-bottom: 10px;
 }
 
-.Warning {
+#Warning {
     background-color: #ffc107;
 }
 
-.Success {
+#Success {
     background-color: #28a745;
 }
 
-.Error {
+#Error {
     background-color: #dc3545;
 }
