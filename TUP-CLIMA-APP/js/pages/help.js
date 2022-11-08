@@ -1,7 +1,6 @@
 let Envio = document.getElementById('envio');
 Envio.addEventListener("click", function () {
     Validacion()
-    Limpiar()
 })
 
 function validarEmail(mail) {
@@ -15,13 +14,6 @@ function validarEmail(mail) {
 function limpiarAlerta() {
     document.getElementById('error').style.display = "none"
     document.getElementById('success').style.display = "none"
-}
-
-function Limpiar() {
-    
-    document.getElementById('name').value = "";
-    document.getElementById('email').value = "";
-    document.getElementById('sent-message').value = "";
 }
 
 function Validacion() {

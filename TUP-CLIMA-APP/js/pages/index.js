@@ -26,8 +26,6 @@ const mostrarDatos= async () => {
     } catch (err) {
         console.log(err);
     }
-
-
 };
 
 function cargarCiudades(){
