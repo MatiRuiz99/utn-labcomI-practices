@@ -11,15 +11,15 @@
     <script src="js/pages/help.js" defer></script>
 </head>
 
-<body>
+<body onload="limpiarAlerta()">
     <header>
         <h1>
             <span>Clima App</span>
         </h1>
         <nav>
             <ul> 
-                <li><a href="C:\SourceCode\UTN\LabComI\utn-labcomI-practices\TUP-CLIMA-APP/index.html">Clima</a></li>
-                <li><a href="C:\SourceCode\UTN\LabComI\utn-labcomI-practices\TUP-CLIMA-APP/add-city.html">Agregar Ciudad</a></li>
+                <li><a href="index.html">Clima</a></li>
+                <li><a href="add-city.html">Agregar Ciudad</a></li>
                 <li class="current-page"><a href="#">Ayuda</a></li>
             </ul>
         </nav>
@@ -32,26 +32,30 @@
                     <a target="_blank" href="https://openweathermap.org/api">OpenWeatherMap.</a></p> 
                 
                     <p>Para poder consultar el clima, primero deberá 
-                    <a href="C:\SourceCode\UTN\LabComI\utn-labcomI-practices\TUP-CLIMA-APP/add-city.html">Agregar una ciudad</a>
+                    <a href="add-city.html">Agregar una ciudad</a>
                     y luego seleccionar <br/> la Ciudad en cuestión desde la página
-                    <a href="C:\SourceCode\UTN\LabComI\utn-labcomI-practices\TUP-CLIMA-APP/index.html">Clima.</a>
+                    <a href="index.html">Clima.</a>
                     </p>       
         <section>
-            <form action="/action_page.php">
-                
+            <form action="/action_page.php"> 
                 <label for="text">Nombre:</label><br>
-                <input type="text" name="nombre" id="Nombre"><br>
+                <input type="text" name="nombre" id="nombre"><br>
                 <label for="email">Email:</label><br>
                 <input type="email" name="email" id="email"><br>
                 <label for="textarea">Mensaje:</label><br>
                 <textarea cols="30" rows="8" name="mensaje" id="mensaje"></textarea><br>
-                <button type="reset">Limpiar</button>
-                <button type="submit">Enviar</button>
+                <button type="reset" onclick="limpiarAlerta()">Limpiar</button>
+                <button type="button" id="submit-button">Enviar</button>
             </form>
         </section> 
-        <div id="error">
-            <p>Ingrese un Email válido</p>
-        </div>
+        <section>
+            <div id="error">
+                <label>Email invalido</label>
+            </div>
+            <div id="success">
+                <label>La informacion se ha enviado correctamente</label>
+            </div> 
+        </section> 
     </main>
     <footer>
         <p>

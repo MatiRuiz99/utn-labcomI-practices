@@ -8,8 +8,8 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/add-city.css">
-    <script src="js/pages/add-city.js" defer></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/add-city.js" defer></script> 
 </head>
 
 <body>
@@ -20,31 +20,32 @@
         <nav>
             <ul>
                 
-                <li><a href="C:\SourceCode\UTN\LabComI\utn-labcomI-practices\TUP-CLIMA-APP/index.html">Clima</a></li>
+                <li><a href="index.html">Clima</a></li>
                 <li class="current-page"><a href="#">Agregar Ciudad</a></li>
-                <li><a href="C:\SourceCode\UTN\LabComI\utn-labcomI-practices\TUP-CLIMA-APP/help.html">Ayuda</a></li>
+                <li><a href="help.html">Ayuda</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Agregar Ciudad</h2>
-        <section id="form-city-list">
-                <form>
-                    <label for="text">Ingrese la ciudad a agregar:</label><br>
-                    <input type="text" name="agregociudad" id="agregociudad"><br>
-                    <button type="button" id="send">Agregar</button><br>
-                </form>
-        </section>
-        <div id="Success">
-            <p>Ciudad agregada con éxito</p>
-        </div>
-        <div id="Warning">
-            <p>La ciudad ingresada ya se encuentra almacendada</p>
-        </div>
-        <div id="Error">
-            <p>Error: La ciudad almacenada no se encuentra almacenada en la API o se <br> produjo un error al consultar</p>
-        </div>
-        
+        <body onload="ocultarAlerts()">
+            <h2>Agregar Ciudad</h2>
+            <section id="form-city-list">
+                    <form>
+                        <label for="text">Ingrese la ciudad a agregar:</label><br>
+                        <input type="text" name="agregociudad" id="agregociudad"><br>
+                        <button onclick="llamarDatos()" type="button" class="input">Agregar</button><br>
+                    </form>
+            </section>
+            <div id="Success" class="Success">
+                <p>Ciudad agregada con éxito</p>
+            </div>
+            <div id="Warning" class="Warning">
+                <p>La ciudad ingresada ya se encuentra almacendada</p>
+            </div>
+            <div id="Error" class="Error">
+                <p>Error: La ciudad almacenada no se encuentra almacenada en la API o se <br> produjo un error al consultar</p>
+            </div>
+        </body> 
     </main>
     <footer>
         <p>
