@@ -3,6 +3,7 @@ function ocultarAlerts() {
     document.getElementById('Warning').style.display = "none";
     document.getElementById('Success').style.display = "none";
 }
+
 function mostrarAlertError() {
     document.getElementById('Error').style.display = "block";
 }
@@ -37,7 +38,7 @@ const llamarDatos= async () => {
             addCity();
             console.log(datos);
         } else {
-            console.log(res.status); // 404
+            console.log(res.status); //Error
             ocultarAlerts();   
             mostrarAlertError();    
         }

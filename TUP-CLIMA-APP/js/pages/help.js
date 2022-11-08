@@ -1,12 +1,11 @@
-let submitButton = document.getElementById('submit-button');
-submitButton.addEventListener("click", function () {
-
+let Envio = document.getElementById('envio');
+Envio.addEventListener("click", function () {
     Validacion()
     Limpiar()
 })
 
-function validarEmail(valor) {
-    if (/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(valor)){
+function validarEmail(mail) {
+    if (/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(mail)){
         return true;
     } else {
         return false;

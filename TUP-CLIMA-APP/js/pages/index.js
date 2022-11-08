@@ -21,7 +21,7 @@ const mostrarDatos= async () => {
             `
             document.getElementById('card').style.display = "block";
         } else {
-            console.log(res.status); // 404            
+            console.log(res.status); //Error           
         }
     } catch (err) {
         console.log(err);
